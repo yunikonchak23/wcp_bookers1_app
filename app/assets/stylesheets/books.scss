@@ -50,6 +50,19 @@ th{
   font-family: verdama;
 }
 
+.item3{
+  font-family: verdama;
+}
+.item4{
+  padding: 10px 0 0 0;
+  font-family: verdama;
+}
+span{
+  font-family: arial;
+  font-size: 15px;
+  margin: 0;
+}
+
 .error{
   width: 450px;
   border: 2px solid red;
@@ -70,4 +83,20 @@ th{
 
 ul{
   margin: 20px 30px;
+}
+
+.show{
+  display: block;
+}
+
+.flash{
+  color: green;
+  font-size: 15px;
+  margin: 33px;
+  font-family: arial;
+}
+
+.edit-title{
+  font-size: 28px;
+  
 }

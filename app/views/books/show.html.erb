@@ -5,11 +5,18 @@
 <% end %>
 
 
-<h4>Title:</h4>
-<p><%= @book.title %></p>
+<p class="show">
+  <span><strong>Title:</strong></span>
+  <%= @book.title %>
+</p>
 
-<h4>Body:</h4>
-<P><%= @book.body %></P>
-<%= link_to "edit", edit_book_path(@book) %>
-<%= link_to "destroy",book_path(@book),method: :delete, data: {confirm: 'Are you sure?'} %>
-<%= link_to "back", :back %>
+<p class="show">
+  <span><strong>Body:</strong></span>
+  <%= @book.body %>
+</p>
+
+<%= link_to "Edit", edit_book_path(@book) %>
+|
+<%= link_to "Destroy",book_path(@book),method: :delete, data: {confirm: 'Are you sure?'} %>
+|
+<%= link_to "Back", 'javascript:history.back()' %>

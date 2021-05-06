@@ -9,6 +9,12 @@
   </head>
 
   <body>
+    <% if flash[ :notice] %>
+     <div class="flash">
+       <%= flash[:notice] %>
+     </div>
+    <% end %>
+    
     <strong class="books-title">Books</strong>
     <table>
       <thead>
@@ -22,9 +28,15 @@
         <tr>
           <td class="book-title"><%= book.title %></td>
           <td class="book-text"><%= book.body %></td>
-          <td><strong class="item"><%= link_to "Show", book_path(book.id) %></storong></td>
-          <td><strong class="item"><%= link_to "Edit", edit_book_path(book) %></strong></td>
-          <td><strong class="item"><%= link_to "Destroy", book, "data-confirm" => "Are you sure?" %></strong></td>
+          <td>
+            <strong class="item"><%= link_to "Show", book_path(book.id) %></storong>
+          </td>
+          <td>
+            <strong class="item"><%= link_to "Edit", edit_book_path(book) %></strong>
+          </td>
+          <td>
+            <strong class="item"><%= link_to "Destroy",book_path(book),method: :delete, data: {confirm: 'Are you sure?'} %></strong>
+          </td>
         </tr>
       <% end %>
       </tbody>
@@ -43,6 +55,7 @@
            </ul>
         </div>
       <% end %>
+      
       <h4 class="item2">Title</h4>
       <%= f.text_field :title %>
 
