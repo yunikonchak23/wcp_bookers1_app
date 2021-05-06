@@ -1,3 +1,73 @@
 // Place all the styles related to the books controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.books-title{
+  font-size: 33px;
+}
+
+.new-title{
+  font-size: 25px;
+}
+table{
+  margin: 18px;
+}
+
+thead{
+  font-size: 16px;
+}
+
+th{
+  padding: 0 0 10px 0;
+}
+
+
+.book-title{
+  padding: 5px;
+}
+
+.book-text{
+  padding: 5px;
+}
+
+.item{
+  padding: 4px ;
+}
+
+.new-title{
+  padding: 3px 0 10px 3px;
+  font-size: 23px;
+}
+
+.item2{
+  padding: 12.5px 0 0 0;
+  font-family: verdama;
+}
+
+.error{
+  width: 450px;
+  border: 2px solid red;
+  background-color: #f0f0f0;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.error1{
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+ul{
+  margin: 20px 30px;
+}
